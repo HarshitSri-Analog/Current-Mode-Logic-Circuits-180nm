@@ -63,7 +63,7 @@ These attributes make CML the architecture of choice for **high-frequency I/O, S
 | :---: | 
 | Fig 3: CML Buffer/Inverter Transient simulation |
 
-A basic differential pair with resistive loads and an NMOS tail source. Demonstrates clean inverting action with sub-100 ps delay (example).
+A basic differential pair with resistive loads and an NMOS tail source. Demonstrates clean inverting action with 66ps delay.
 
 ### 2. CML NOR / OR Gate
 
