@@ -58,12 +58,34 @@ These attributes make CML the architecture of choice for **high-frequency I/O, S
 | :---: | 
 | Fig 2: CML Buffer/Inverter Testbench |
 
+#### ⚙️ Circuit Description
+
+##### 🔷 Structure
+
+- A differential pair of **NMOS transistors** controlled by inputs `inp` and `inn` as shown in Fig 1.
+- A **bias NMOS current source** at the common source.
+- Load devices (PMOS or resistors) pulling outputs toward VDD.
+- Outputs: `outp` and `outn`.
+
+#### 🔄 Logic Operation
+
+| `inp` | `inn` | `outn` | `outp` | `outn - outp` (Inverter) | `outp - outn` (Buffer) |
+|:-----:|:-----:|:------:|:------:|:-------------------------:|:----------------------:|
+| High  | Low   | Low    | High   | Low                       | High                   |
+| Low   | High  | High   | Low    | High                      | Low                    |
+
+##### 🧠 Interpretation:
+
+- **`outn - outp`** behaves like an **Inverter output**.
+- **`outp - outn`** behaves like a **Buffer output**.
+- Output voltage swings between **-600mV and +600mV** for both outputs.
+
 **Transient Response:**  
 | ![CML Buffer and Inv](CML_Buff_Inv/CML_Buff_inv_sim_trans.png) | 
 | :---: | 
-| Fig 3: CML Buffer/Inverter Transient simulation |
+| Fig 3: CML Buffer/Inverter Transient analysis |
 
-A basic differential pair with resistive loads and an NMOS tail source. Demonstrates clean inverting action with 66ps delay.
+*Thus, from the simulation results, it is clearly observable that both the CML inverter and buffer exhibit a very fast response with a propagation delay of just 65 ps and a differential swing of 1.2 V, resulting in significantly faster operation compared to conventional CMOS logic.*
 
 ### 2. CML NOR / OR Gate
 
