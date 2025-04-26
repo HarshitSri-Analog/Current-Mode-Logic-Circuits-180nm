@@ -50,7 +50,8 @@ These attributes make CML the architecture of choice for **high-frequency I/O, S
 ### 1. CML Buffer / Inverter
 
 **Schematic:**  
-![Buffer Schematic](./CML_Buffer_Inverter/schematic.png)
+![Buffer Schematic](CML_Buff_Inv/CML_Buffer_inv_ckt.png)
+*Figure 1: CML Buffer / Inverter Schematic*
 
 **Transient Response:**  
 ![Buffer Waveform](./CML_Buffer_Inverter/waveform.png)
