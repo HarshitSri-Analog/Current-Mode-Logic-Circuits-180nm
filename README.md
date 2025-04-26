@@ -67,7 +67,7 @@ These attributes make CML the architecture of choice for **high-frequency I/O, S
 - Load devices (PMOS or resistors) pulling outputs toward VDD.
 - Outputs: `outp` and `outn`.
 
-#### 🔄 Logic Operation
+##### 🔄 Logic Operation
 
 | `inp` | `inn` | `outn` | `outp` | `outn - outp` (Inverter) | `outp - outn` (Buffer) |
 |:-----:|:-----:|:------:|:------:|:-------------------------:|:----------------------:|
