@@ -50,71 +50,126 @@ These attributes make CML the architecture of choice for **high-frequency I/O, S
 ### 1. CML Buffer / Inverter
 
 **Schematic:**  
-![Buffer Schematic](CML_Buff_Inv/CML_Buffer_inv_ckt.png)
-*Figure 1: CML Buffer / Inverter Schematic*
+| ![CML Buffer and Inv](CML_Buff_Inv/CML_Buffer_inv_ckt.png) | 
+| :---: | 
+| Fig 1: CML Buffer/Inverter Schematic |
+
+| ![CML Buffer and Inv](CML_Buff_Inv/CML_Buffer_inv_tb.png) | 
+| :---: | 
+| Fig 2: CML Buffer/Inverter Testbench |
 
 **Transient Response:**  
-![Buffer Waveform](./CML_Buffer_Inverter/waveform.png)
+| ![CML Buffer and Inv](CML_Buff_Inv/CML_Buffer_inv_sim_trans.png) | 
+| :---: | 
+| Fig 3: CML Buffer/Inverter Transient simulation |
 
 A basic differential pair with resistive loads and an NMOS tail source. Demonstrates clean inverting action with sub-100 ps delay (example).
 
 ### 2. CML NOR / OR Gate
 
 **Schematic:**  
-![NOR OR Schematic](./CML_OR_NOR/schematic.png)
+| ![CML Nor and OR](CML_NOR_OR/CML_NOR_OR_ckt.png) | 
+| :---: | 
+| Fig 4: CML NOR/OR Gate Schematic |
+
+| ![CML Nor and OR](CML_NOR_OR/CML_NOR_OR_tb.png) | 
+| :---: | 
+| Fig 5: CML NOR/OR Gate Testbench |
 
 **Transient Response:**  
-![NOR OR Waveform](./CML_OR_NOR/waveform.png)
+| ![CML Nor and OR](CML_NOR_OR/CML_NOR_OR_trans_sim.png) | 
+| :---: | 
+| Fig 6: CML NOR/OR Gate analysis |
 
 Implements NOR and OR by steering currents through parallel differential branches. Ensures minimal skew between outputs.
 
 ### 3. CML AND / NAND Gate
 
 **Schematic:**  
-![AND NAND Schematic](./CML_AND_NAND/schematic.png)
+| ![CML NAND and AND](CML_NAND_AND/CML_NAND_AND_ckt.png) | 
+| :---: | 
+| Fig 7: CML NAND/AND Gate Schematic |
+
+| ![CML NAND and AND](CML_NAND_AND/CML_NAND_AND_tb.png) | 
+| :---: | 
+| Fig 8: CML NAND/AND Gate Testbench |
 
 **Transient Response:**  
-![AND NAND Waveform](./CML_AND_NAND/waveform.png)
+| ![CML NAND and AND](CML_NAND_AND/CML_NAND_AND_trans_sim.png) | 
+| :---: | 
+| Fig 9: CML NAND/AND Gate analysis |
 
 Uses stacked differential pairs to realize AND/NAND logic. Carefully sized devices optimize fan-in versus speed trade-offs.
 
 ### 4. 2×1 CML Multiplexer
 
 **Schematic:**  
-![2x1 MUX Schematic](./CML_2x1_MUX/schematic.png)
+| ![CML 2X1_MUX](CML_2X1_Multiplexer/CML_2X1_MUX_ckt.png) | 
+| :---: | 
+| Fig 10: CML 2X1 Multiplexer Schematic |
+
+| ![CML 2X1_MUX](CML_2X1_Multiplexer/CML_2X1_MUX_tb.png) | 
+| :---: | 
+| Fig 11: CML 2X1 Multiplexer Testbench |
 
 **Transient Response:**  
-![2x1 MUX Waveform](./CML_2x1_MUX/waveform.png)
+| ![CML 2X1_MUX](CML_2X1_Multiplexer/CML_2X1_MUX_sim_trans.png) | 
+| :---: | 
+| Fig 12: CML 2X1 Multiplexer analysis |
 
 Selects one of two differential inputs. Highlights low-glitch switching and minimal propagation penalty.
 
 ### 5. CML D Latch – Positive Level Triggered
 
 **Schematic:**  
-![D Latch Pos Schematic](./CML_D_Latch_Pos/schematic.png)
+| ![CML Pos_D_latch](CML_Pos_D_latch/CML_Pos_D_latch_ckt.png) | 
+| :---: | 
+| Fig 13: CML Positive level triggered D-latch schematic |
+
+| ![CML Pos_D_latch](CML_Pos_D_latch/CML_Pos_D_latch_wbuff_tb.png) | 
+| :---: | 
+| Fig 14: CML Positive level triggered D-latch with buffer testbench |
 
 **Transient Response:**  
-![D Latch Pos Waveform](./CML_D_Latch_Pos/waveform.png)
+| ![CML Pos_D_latch](CML_Pos_D_latch/CML_Pos_D_latch_trans_sim.png) | 
+| :---: | 
+| Fig 15: CML Positive level triggered D-latch analysis |
 
 Samples input when clock is high; holds data when low. Demonstrates robust level-sensitive behavior.
 
 ### 6. CML D Latch – Negative Level Triggered
 
 **Schematic:**  
-![D Latch Neg Schematic](./CML_D_Latch_Neg/schematic.png)
+| ![CML Neg_D_latch](CML_Neg_D_latch/CML_Neg_D_latch_ckt.png) | 
+| :---: | 
+| Fig 16: CML Negative level triggered D-latch schematic |
+
+| ![CML Neg_D_latch](CML_Neg_D_latch/CML_Neg_D_latch_wbuff_tb.png) | 
+| :---: | 
+| Fig 17: CML Negative level triggered D-latch with buffer testbench |
 
 **Transient Response:**  
-![D Latch Neg Waveform](./CML_D_Latch_Neg/waveform.png)
+| ![CML Neg_D_latch](CML_Neg_D_latch/CML_Neg_D_latch_trans_sim.png) | 
+| :---: | 
+| Fig 18: CML Negative level triggered D-latch analysis |
 
 Complementary to the positive latch, sampling on clock low and holding on high.
 
 ### 7. CML D Flip-Flop – Positive Edge Triggered
 
 **Schematic:**  
-![DFF Schematic](./CML_DFF_Pos_Edge/schematic.png)
+| ![CML Posedge_DFF](CML_Posedge_DFF/CML_Posedge_DFF_ckt.png) | 
+| :---: | 
+| Fig 19: CML Positive edge triggered D-flipflop schematic |
+
+| ![CML Posedge_DFF](CML_Posedge_DFF/CML_Posedge_DFF_tb.png) | 
+| :---: | 
+| Fig 20: CML Positive edge triggered D-flipflop testbench |
 
 **Transient Response:**  
-![DFF Waveform](./CML_DFF_Pos_Edge/waveform.png)
+| ![CML Posedge_DFF](CML_Posedge_DFF/CML_Posedge_DFF_trans_sim.png) | 
+| :---: | 
+| Fig 21: CML Positive edge triggered D-flipflop analysis |
 
 Master-slave configuration capturing data on the rising clock edge, combining two level-sensitive latches.
 
@@ -133,8 +188,6 @@ Below is a summary of the **propagation delays** I measured during transient sim
 | CML D Latch (Positive Level)       | XX ps                       |
 | CML D Latch (Negative Level)       | XX ps                       |
 | CML D Flip-Flop (Pos Edge Trigger) | XX ps                       |
-
-*(Values to be updated with actual simulation results.)*
 
 ---
 
