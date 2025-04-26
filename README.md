@@ -59,7 +59,7 @@ These attributes make CML the architecture of choice for **high-frequency I/O, S
 | Fig 2: CML Buffer/Inverter Testbench |
 
 **Transient Response:**  
-| ![CML Buffer and Inv](CML_Buff_Inv/CML_Buffer_inv_sim_trans.png) | 
+| ![CML Buffer and Inv](CML_Buff_Inv/CML_Buff_inv_sim_trans.png) | 
 | :---: | 
 | Fig 3: CML Buffer/Inverter Transient simulation |
 
@@ -167,7 +167,7 @@ Complementary to the positive latch, sampling on clock low and holding on high.
 | Fig 20: CML Positive edge triggered D-flipflop testbench |
 
 **Transient Response:**  
-| ![CML Posedge_DFF](CML_Posedge_DFF/CML_Posedge_DFF_trans_sim.png) | 
+| ![CML Posedge_DFF](CML_Posedge_DFF/CML_Pos_edge_DFF_trans_sim.png) | 
 | :---: | 
 | Fig 21: CML Positive edge triggered D-flipflop analysis |
 
