@@ -207,5 +207,5 @@ These building blocks serve as a solid foundation for complex SerDes channels, l
 
 **Harshit Srivastava**  
 Analog Design Engineer & VLSI Enthusiast  
-[LinkedIn](#https://github.com/HarshitSri-Analog) • [Email](#harshitsri117@gmail.com)  
+[LinkedIn](#github.com/HarshitSri-Analog) • [Email](#harshitsri117@gmail.com)  
 
