@@ -181,13 +181,13 @@ Below is a summary of the **propagation delays** I measured during transient sim
 
 | **Circuit**                         | **Measured t<sub>pd</sub>** |
 |------------------------------------|-----------------------------|
-| CML Buffer / Inverter              | XX ps                       |
-| CML NOR / OR Gate                  | XX ps                       |
-| CML AND / NAND Gate                | XX ps                       |
-| 2×1 CML Multiplexer                | XX ps                       |
-| CML D Latch (Positive Level)       | XX ps                       |
-| CML D Latch (Negative Level)       | XX ps                       |
-| CML D Flip-Flop (Pos Edge Trigger) | XX ps                       |
+| CML Buffer / Inverter              | 64.65 ps                       |
+| CML NOR / OR Gate                  | 127.8 ps                       |
+| CML AND / NAND Gate                | 128 ps                       |
+| 2×1 CML Multiplexer                | 133.8 ps                       |
+| CML D Latch (Positive Level)       | 209.8 ps                       |
+| CML D Latch (Negative Level)       | 213.3 ps                       |
+| CML D Flip-Flop (Pos Edge Trigger) | 186.6 ps                       |
 
 ---
 
