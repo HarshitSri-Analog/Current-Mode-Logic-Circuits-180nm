@@ -1,4 +1,4 @@
-# Current Mode Logic (CML) Circuits – VLSI Design
+# Current Mode Logic (CML) Circuits – using 0.18um technology
 
 Welcome to my repository showcasing a detailed collection of **Current Mode Logic (CML)** digital circuits, designed and simulated using **Cadence Virtuoso** at the **180 nm technology node**. This work demonstrates my systematic approach to high-speed differential logic design and my proficiency with industry-standard EDA flows.
 
