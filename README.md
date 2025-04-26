@@ -57,8 +57,6 @@ These attributes make CML the architecture of choice for **high-frequency I/O, S
 
 A basic differential pair with resistive loads and an NMOS tail source. Demonstrates clean inverting action with sub-100 ps delay (example).
 
----
-
 ### 2. CML NOR / OR Gate
 
 **Schematic:**  
@@ -68,8 +66,6 @@ A basic differential pair with resistive loads and an NMOS tail source. Demonstr
 ![NOR OR Waveform](./CML_OR_NOR/waveform.png)
 
 Implements NOR and OR by steering currents through parallel differential branches. Ensures minimal skew between outputs.
-
----
 
 ### 3. CML AND / NAND Gate
 
@@ -81,8 +77,6 @@ Implements NOR and OR by steering currents through parallel differential branche
 
 Uses stacked differential pairs to realize AND/NAND logic. Carefully sized devices optimize fan-in versus speed trade-offs.
 
----
-
 ### 4. 2×1 CML Multiplexer
 
 **Schematic:**  
@@ -92,8 +86,6 @@ Uses stacked differential pairs to realize AND/NAND logic. Carefully sized devic
 ![2x1 MUX Waveform](./CML_2x1_MUX/waveform.png)
 
 Selects one of two differential inputs. Highlights low-glitch switching and minimal propagation penalty.
-
----
 
 ### 5. CML D Latch – Positive Level Triggered
 
@@ -105,8 +97,6 @@ Selects one of two differential inputs. Highlights low-glitch switching and mini
 
 Samples input when clock is high; holds data when low. Demonstrates robust level-sensitive behavior.
 
----
-
 ### 6. CML D Latch – Negative Level Triggered
 
 **Schematic:**  
@@ -116,8 +106,6 @@ Samples input when clock is high; holds data when low. Demonstrates robust level
 ![D Latch Neg Waveform](./CML_D_Latch_Neg/waveform.png)
 
 Complementary to the positive latch, sampling on clock low and holding on high.
-
----
 
 ### 7. CML D Flip-Flop – Positive Edge Triggered
 
@@ -165,5 +153,5 @@ These building blocks serve as a solid foundation for complex SerDes channels, l
 
 **Harshit Srivastava**  
 Analog Design Engineer & VLSI Enthusiast  
-[LinkedIn](#) • [Email](#harshitsri117@gmail.com)  
+[LinkedIn](#https://github.com/HarshitSri-Analog) • [Email](#harshitsri117@gmail.com)  
 
