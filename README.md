@@ -207,9 +207,9 @@ Below is a summary of the **propagation delays** I measured during transient sim
 | CML NOR / OR Gate                  | 127.8 ps                       |
 | CML AND / NAND Gate                | 128 ps                       |
 | 2×1 CML Multiplexer                | 133.8 ps                       |
-| CML D Latch (Positive Level)       | 209.8 ps                       |
-| CML D Latch (Negative Level)       | 213.3 ps                       |
-| CML D Flip-Flop (Pos Edge Trigger) | 186.6 ps                       |
+| CML D Latch (Positive Level)       | 209.8 ps (t<sub>clk to Q</sub>)                       |
+| CML D Latch (Negative Level)       | 213.3 ps (t<sub>clk to Q</sub>)                      |
+| CML D Flip-Flop (Pos Edge Trigger) | 186.6 ps (t<sub>clk to Q</sub>)                      |
 
 ---
 
